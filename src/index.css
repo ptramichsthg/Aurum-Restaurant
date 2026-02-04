@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+    body {
+        @apply bg-aurum-black text-aurum-offwhite font-sans antialiased;
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-serif;
+    }
+}

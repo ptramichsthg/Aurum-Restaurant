@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
     return (
-        <section className="py-24 px-4 md:px-10 lg:px-20 bg-[#1a180f] relative overflow-hidden" id="contact">
+        <section className="py-24 px-4 md:px-10 lg:px-20 bg-surface-darkest relative overflow-hidden" id="contact">
             {/* Background patterns */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
@@ -80,17 +80,17 @@ export default function Contact() {
                         <form className="flex flex-col gap-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col gap-2">
-                                    <label className="text-text-gold-muted text-xs uppercase tracking-widest">Name</label>
-                                    <input type="text" className="bg-transparent border-b border-[#605739]/50 text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light" placeholder="Your Name" />
+                                    <label htmlFor="name" className="text-text-gold-muted text-xs uppercase tracking-widest">Name</label>
+                                    <input id="name" type="text" className="bg-transparent border-b border-surface-border text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light" placeholder="Your Name" />
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <label className="text-text-gold-muted text-xs uppercase tracking-widest">Email</label>
-                                    <input type="email" className="bg-transparent border-b border-[#605739]/50 text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light" placeholder="your@email.com" />
+                                    <label htmlFor="email" className="text-text-gold-muted text-xs uppercase tracking-widest">Email</label>
+                                    <input id="email" type="email" className="bg-transparent border-b border-surface-border text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light" placeholder="your@email.com" />
                                 </div>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <label className="text-text-gold-muted text-xs uppercase tracking-widest">Subject</label>
-                                <select className="bg-transparent border-b border-[#605739]/50 text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light [&>option]:bg-background-dark">
+                                <label htmlFor="subject" className="text-text-gold-muted text-xs uppercase tracking-widest">Subject</label>
+                                <select id="subject" className="bg-transparent border-b border-surface-border text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light [&>option]:bg-background-dark">
                                     <option>General Inquiry</option>
                                     <option>Private Events</option>
                                     <option>Press</option>
@@ -98,8 +98,8 @@ export default function Contact() {
                                 </select>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <label className="text-text-gold-muted text-xs uppercase tracking-widest">Message</label>
-                                <textarea rows="4" className="bg-transparent border-b border-[#605739]/50 text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light resize-none" placeholder="How can we assist you?"></textarea>
+                                <label htmlFor="message" className="text-text-gold-muted text-xs uppercase tracking-widest">Message</label>
+                                <textarea id="message" rows="4" className="bg-transparent border-b border-surface-border text-white py-2 focus:border-primary focus:outline-hidden transition-colors font-light resize-none" placeholder="How can we assist you?"></textarea>
                             </div>
                             <button className="mt-4 border border-primary text-primary hover:bg-primary hover:text-background-dark py-4 rounded-sm text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300 w-full sm:w-auto self-start px-10">
                                 Send Message

@@ -13,16 +13,18 @@ export default {
                 "background-dark": "#201d12",
                 "surface-dark": "#302c1c",
                 "text-gold-muted": "#c3b998",
-                // Keeping previous ones just in case, but mapped effectively
                 'aurum-black': '#201d12',
                 'aurum-gold': '#d4af35',
                 'aurum-gray': '#302c1c',
                 'aurum-offwhite': '#f8f7f6',
+                // Additional hardcoded colors from components mapped as standard colors
+                "surface-darker": "#15130b",
+                "surface-darkest": "#1a180f",
+                "surface-border": "#605739"
             },
             fontFamily: {
                 "display": ["Montserrat", "sans-serif"],
                 "serif": ["Cormorant Garamond", "serif"],
-                // Keeping defaults for compatibility
                 sans: ["Montserrat", "sans-serif"],
             },
             borderRadius: {

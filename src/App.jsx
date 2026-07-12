@@ -11,7 +11,7 @@ import './App.css'; // Ensure we keep default styles if any, or remove if unused
 
 function App() {
   return (
-    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden dark">
+    <div className="text-slate-900 dark:text-white font-display overflow-x-hidden">
       <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root">
         <Navbar />
         <Hero />

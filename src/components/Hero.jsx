@@ -11,7 +11,9 @@ export default function Hero() {
                     animate={{ scale: 1 }}
                     transition={{ duration: 10, ease: "easeOut" }}
                     className="w-full h-full bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: 'linear-gradient(rgba(20, 18, 10, 0.6), rgba(20, 18, 10, 0.4)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXEWHMMNvh8o2Iow4W85tUtGR7rmGPkbWYYMZsbRHpFKUZyRgFlkUs5VQQFuxCrzREOJXEWylWzHTaVOSnxuIq_KqCliTuyo_FLzdkGjKd-8EskV6dx1p1bmz7x6XxzIV7aeq3Ow6a2f24q28NiAs8etNwlFMb5w5RxGOqzYOU1qTc1HFlO_1zmDEjG6P7DcuPn6TAE57Odz84XRhTME01WwSUtJ8IjejO5HWvBll4BySldT4-slegN5KwmJh_QdMmqiL7xEE8_XA")' }}
+                    role="img"
+                    aria-label="Fine dining ambiance background"
+                    style={{ backgroundImage: 'linear-gradient(rgba(20, 18, 10, 0.6), rgba(20, 18, 10, 0.4)), url("/assets/images/hero.jpg")' }}
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-background-dark/30 via-transparent to-background-dark/80"></div>
             </div>
@@ -29,7 +31,7 @@ export default function Hero() {
                         <div className="h-px w-12 bg-primary/60"></div>
                     </div>
 
-                    <h1 className="text-white text-6xl md:text-8xl lg:text-9xl font-serif font-medium leading-none tracking-tight">
+                    <h1 className="text-white text-5xl md:text-7xl lg:text-9xl font-serif font-medium leading-none tracking-tight break-words max-w-full">
                         AURUM
                     </h1>
 
@@ -44,9 +46,9 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                 >
-                    <button className="relative overflow-hidden group border border-primary text-primary px-12 py-4 rounded-sm transition-all duration-300 hover:bg-primary hover:text-background-dark">
+                    <a href="#reservations" className="inline-block relative overflow-hidden group border border-primary text-primary px-12 py-4 rounded-sm transition-all duration-300 hover:bg-primary hover:text-background-dark text-center">
                         <span className="relative text-sm md:text-base font-bold uppercase tracking-[0.2em]">Reserve Your Table</span>
-                    </button>
+                    </a>
                 </motion.div>
             </div>
 

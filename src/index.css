@@ -1,9 +1,13 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+html {
+    scroll-behavior: smooth;
+}
+
 @layer base {
     body {
-        @apply bg-aurum-black text-aurum-offwhite font-sans antialiased;
+        @apply bg-background-dark text-aurum-offwhite font-sans antialiased;
         margin: 0;
     }
 

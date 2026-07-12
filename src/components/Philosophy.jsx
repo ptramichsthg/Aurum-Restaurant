@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 const FeatureCard = ({ icon, title, description, delay }) => (
     <motion.div
@@ -16,6 +17,13 @@ const FeatureCard = ({ icon, title, description, delay }) => (
         <p className="text-text-gold-muted text-sm leading-relaxed font-light">{description}</p>
     </motion.div>
 );
+
+FeatureCard.propTypes = {
+    icon: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    delay: PropTypes.number.isRequired,
+};
 
 export default function Philosophy() {
     return (
@@ -64,8 +72,9 @@ export default function Philosophy() {
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-700"></div>
                             <div
                                 className="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
-                                data-alt="Chef plating a high-end dish with tweezers"
-                                style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuABCUJCf1Ary3htHTv9izSGDZdGDuh_-y0hO3CBQmMU4w4gIHowXHwCfIMVtPmqHHfFHULU-wjeM1H7d4acOy36uNz8kCPIcriLMDHflpdDmsYkUMYCNr9_CdwN_rP-UkUxr2dlBJUx-9iY47KNuWjj8kYU6efvTGQdm_ftMP2k7CTxxfnGcSTVTyuY8YO7rqEYffM1nAJDUHUxQzo18B1o2Y-8N6KkZGI3X0xWfeMxUf7ZUEK0Bmt89coQTu1IxB4-T-9n9zp--E8")' }}
+                                role="img"
+                                aria-label="Chef plating a high-end dish with tweezers"
+                                style={{ backgroundImage: 'url("/assets/images/chef.jpg")' }}
                             >
                             </div>
                         </div>

@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 
 export default function Reservation() {
     return (
-        <section className="py-32 px-4 relative overflow-hidden flex items-center justify-center" id="contact">
+        <section className="py-32 px-4 relative overflow-hidden flex items-center justify-center" id="reservations">
             {/* Parallax Background */}
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed bg-no-repeat"
+                role="img"
+                aria-label="Fine dining table setting"
                 style={{
-                    backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXEWHMMNvh8o2Iow4W85tUtGR7rmGPkbWYYMZsbRHpFKUZyRgFlkUs5VQQFuxCrzREOJXEWylWzHTaVOSnxuIq_KqCliTuyo_FLzdkGjKd-8EskV6dx1p1bmz7x6XxzIV7aeq3Ow6a2f24q28NiAs8etNwlFMb5w5RxGOqzYOU1qTc1HFlO_1zmDEjG6P7DcuPn6TAE57Odz84XRhTME01WwSUtJ8IjejO5HWvBll4BySldT4-slegN5KwmJh_QdMmqiL7xEE8_XA")',
+                    backgroundImage: 'url("/assets/images/hero.jpg")',
                     filter: 'brightness(0.3)'
                 }}
             ></div>

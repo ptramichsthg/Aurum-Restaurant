@@ -8,6 +8,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
+            
             setIsScrolled(window.scrollY > 50);
         };
 
@@ -95,16 +96,16 @@ export default function Navbar() {
                                     </a>
                                 ))}
                             </div>
-                            <button className="relative overflow-hidden group border border-primary/50 hover:border-primary px-8 py-2.5 rounded-sm transition-all duration-300">
+                            <a href="#reservations" className="relative overflow-hidden group border border-primary/50 hover:border-primary px-8 py-2.5 rounded-sm transition-all duration-300 flex items-center justify-center">
                                 <span className="absolute inset-0 w-full h-full bg-primary/10 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0"></span>
                                 <span className="relative text-primary text-xs font-bold uppercase tracking-widest group-hover:text-white transition-colors">Reserve</span>
-                            </button>
+                            </a>
                         </div>
 
                         {/* Mobile Menu Toggle */}
-                        <div className="lg:hidden text-white cursor-pointer z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <button aria-label="Toggle Menu" className="lg:hidden text-white cursor-pointer z-50 bg-transparent border-none" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             <span className="material-symbols-outlined text-3xl">{isMenuOpen ? 'close' : 'menu'}</span>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </motion.nav>
@@ -135,14 +136,16 @@ export default function Navbar() {
                                 </motion.a>
                             ))}
 
-                            <motion.button
+                            <motion.a
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.6 }}
-                                className="mt-8 border border-primary text-primary px-10 py-3 rounded-sm uppercase tracking-widest text-sm hover:bg-primary hover:text-black transition-all"
+                                href="#reservations"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="mt-8 border border-primary text-primary px-10 py-3 rounded-sm uppercase tracking-widest text-sm hover:bg-primary hover:text-black transition-all text-center inline-block"
                             >
                                 Reserve Table
-                            </motion.button>
+                            </motion.a>
                         </div>
                     </motion.div>
                 )}
